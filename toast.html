@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <button type="button" class="btn btn-primary" id="toastbtn" > Toast button</button>
+    <!-- Toast is an alert that only shows for a small amount of time aftre clicking of a button or the submission of a form or any other thing  -->
+    <div class="toast show" >
+
+        <!-- If you want to do this using a button you must use javascript for the functionality after some HTMl code has been put -->
+        <div class="toast-header">
+            <h4 class="me-auto" >Toast header</h4>
+            <button type="button" data-bs-dismiss="toast" class="btn-close" ></button>
+        </div>
+
+        <div class="toast-body">
+            <p>Some text inside the toast body</p>
+        </div>
+
+    </div>
+
+    <script>
+        // The function to allow the button to work as is it supposed to 
+        document.getElementById("toastbtn").onclick
+    </script>
+</body>
+</html>

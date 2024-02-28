@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1 class="bg-primary">pagination</h1>
+        <p>pagination refers to the nimbering of pages
+         from previous to the numbered ones to the next one</p>
+         <!--You will have to place the elements in an unordered list-->
+
+         <ul class="pagination" >
+            <!--The elements in the li element must have the page-item property under class-->
+            <!--The page-link property can also be sused with class-->
+            <li class="page-item disabled"><a class="page-link" href="#">previous</a></li>
+            <!--You can put the active property to the class attribute of the link element -->
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+
+            <!--You can also add the disabled to the class element of the link element-->
+            <li class="page-item "><a class="page-link" href="#">2</a></li>
+            <!--pagination-lg and pagination-sm can be added to the unordered list element for sizes effect-->
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">next</a></li>    
+         </ul>
+    </div>
+
+    
+ 
+</body>
+</html>

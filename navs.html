@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- We will be looking into navigation menus -->
+        <h3>navigation</h3>
+        <!-- The navigation menus are from unorderd lists -->
+        <p>basic horizontal menu : </p>
+
+        <!-- To make the navigation items into tabs you can add .nav-tabs -->
+        <!-- pills are made using nav-pills -->
+        <!-- .nav-pills is for turning the nav menu into navigation-pills    -->
+        <ul class="nav bg-secondary nav-pills nav-justified">
+            <li class="nav-item">
+                <a href="#" class="nav-link" >HOME</a>
+            </li>
+
+            <!-- for aligning the contents you can use  justify-content-center or justify-content-end toalign the navigation bar contents-->
+            <!-- When the justify-content is not usez dthen the items will automatically be aligned to the left of the navigation bar -->
+            <!-- For a vertical navigation bar you can use .flex-column as the class property -->
+            <li>
+                <!-- The links are supposed to lead to your another place  in the website    -->
+                <a href="#" class="nav-link" >ABOUT US</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link" >CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- pills with dropdowns -->
+    <div class="container mt-3">
+        <!-- The navs can eitther be nav tabs or nav pills -->
+     <ul class="nav nav-tabs">
+        
+        <li class="nav-item"><a href="#" class="nav-link">Active</a>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">dropdown</a>
+                <ul class="dropdown-menu">
+                    <li ><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li ><a class="dropdown-item" href="#">link 2</a></li>
+                    <li ><a class="dropdown-item" href="#">link 3 </a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">link</a></li>     
+            <li class="nav-item"><a href="#" class="nav-link disabled">disabled</a></li>
+        </li>
+
+    </ul>
+    </div>
+</body>
+</html>

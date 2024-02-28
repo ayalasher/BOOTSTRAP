@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic tabs pills 2 </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <!-- We are going to make a dynamic navigation tab for a blog website -->
+    <div class="container mt-3">
+        <!-- tab headers -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#home">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#contact">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link"data-bs-toggle="tab" href="#products">PRODUCTS</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h4>HOME</h4>
+                <p>This  section contains some information about what you
+                     are going to find some basic and personal info about me 
+                    . This is just going to be some short info or text . contacts and products is also available
+                </p>
+            </div>
+
+            <div class="container tab-pane fade" id="contact"><br>
+                <h4>CONTACT</h4>
+                <p>This section is to contain the different ways in which you can simply contact me from social media platforms to my phone number
+                    . The home and products versions are also available
+                </p>
+            </div>
+
+            <div class="container tab-pane fade" id="products"><br>
+                <h4>PRODUCTS</h4>
+                <p>This section is to contain information on the products that i produce and sell . 
+                    The home and contact sections are also available
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

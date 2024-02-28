@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="container mt-3">
+        <h3>simple collapseible </h3>
+        <p>Click on the button below to toggle between showing and hiding content</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">simple collapseible</button>
+        <div id="demo" class="collapse">Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Ex error consequatur ullam architecto qui hic
+             id, dolores, corrupti voluptatibus, nostrum cupiditate quod voluptates.
+              Fugiat, accusamus?</div>
+
+    </div>
+
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapseone" class="btn" data-bs-toggle="collapse" >Simple accordion</a>
+            </div>
+        </div>
+        <div id="collapseone" class="collpase show" data-bs-parent="#accordion">
+            <div class="card-body">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Quidem voluptatibus, iste quas maiores harum quia amet
+                 fugit facilis qui sed ex saepe vero, laborum possimus?
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapsetwo" class="collapsed btn" data-bs-toggle="collapse">Collapsible Item Two</a>
+            </div>
+        </div>
+        <div class="collapse" id="collapsetwo" data-bs-parent="#accordion">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam esse numquam, fugit 
+                deleniti ex, totam officiis dolor porro modi eum corrupti a temporibus 
+                quis velit nulla dolore itaque assumenda quisquam?
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapsethree" class="collapsed btn" data-bs-toggle="collapse">Collapsible Item Three</a>
+            </div>
+        </div>
+        <div class="collapse" id="collapsethree" data-bs-parent="#accordion">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam esse numquam, fugit 
+                deleniti ex, totam officiis dolor porro modi eum corrupti a temporibus 
+                quis velit nulla dolore itaque assumenda quisquam?
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

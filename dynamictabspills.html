@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic tabs and pills </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- we are going to look into dynamic tabs  -->
+    <!-- The tabs will be created first then the panes -->
+
+    <div class="container mt-3">
+
+   
+    <!-- nav tabs -->
+    <!-- To chabge them to nav pills you can use //nav nav-pills  -->
+    <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item" ><a href="#home" class="nav-link active" data-bs-toggle="tab">HOME</a></li>
+        <li class="nav-item" ><a href="#contents1" class="nav-link" data-bs-toggle="tab" >Contents 1</a></li>
+        <li class="nav-item"  ><a href="#contents2" class="nav-link" data-bs-toggle="tab" >contents 2</a></li>
+    </ul>
+
+    <!-- nav tab-panes  .... must have te tab-pane-->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+            <h4>HOME</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Quos possimus omnis consectetur minus inventore illo sequi
+                  mollitia accusamus tempore quia.</p>
+        </div>
+
+        <div id="contents1" class="container tab-pane fade"><br>
+            <h4>CONTENTS 1</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Iure dolorum, animi et mollitia modi error nesciunt ullam
+                 praesentium quo minus.</p>
+        </div>
+
+        <div id="contents2" class="container tab-pane fade"><br>
+            <h4>CONTENTS 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum voluptatum
+                 sed temporibus quo, aspernatur ipsum placeat culpa ea commodi reiciendis.</p>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

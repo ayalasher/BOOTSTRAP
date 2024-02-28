@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accosrdion console</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" >n
+                    <a href="#accordionone" data-bs-toggle="cnollapse" class="btn" >playstation 5</a>
+                </div>
+                <div id="accordionone" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        the price for the console is currently at 1000 USD . Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quos aperiam natus quisquam voluptas nihil temporibus! Animi quibusdam quas, laudantium, provident similique et illum ducimus ipsam dignissimos nulla, atque quam.
+                    </div>
+                    <!-- The breakpoint ... A red dot found at the left side next to numbers  -->
+                    <!-- This is a point where you want the debugger to stop its action  -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapsetwo" class="collapsed btn" data-bs-toggle="collapse">playstation 4</a>
+                </div>
+                <div class="collapse" id="collapsetwo" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        the running price for that console is the around 400 USD . Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi consequatur ducimus aliquam perferendis, quaerat laborum incidunt iste ea ab doloribus odio dignissimos dolorem debitis deserunt modi. Ad, exercitationem reprehenderit?
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapsethree" class="btn collapsed" data-bs-toggle="collapse">playstation 3</a>
+                </div>
+                <div class="collapse" id="collapsethree" data-bs-parent="#accordion">
+                    <div class="card-body" >
+                        The retailing price for the console is around 120 USD . Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quia unde dignissimos voluptates expedita suscipit nostrum maxime error laudantium, tenetur eaque culpa et quos odit perferendis vero illo, facere veniam?
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

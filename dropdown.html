@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!--We are going to look at dropdowns.. they are very crucial in the development of webpages.
+    <when clicked other items or options from the one available appear-->
+    <div class="cointainer">
+        <h3>Basic Dropdown</h3>
+        <!-- ou can decide how the dropdown menu should appear either to the left or the right -->
+        <!-- There is the dropend and the dropstart options that you can choose from -->
+        <!-- Note that dropup is also available -->
+        <div class="dropdown dropend">
+
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><h5 class="dropdown-header btn btn-success text-warning">ITEMS</h5></li>
+                <!-- you can add the active or disabled  -->
+                <li><a href="#" class="dropdown-item active">Item 1</a></li>
+                <li><a href="#" class="dropdown-item disabled">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+                <!-- You can add other the dropdown divider to show other items in the dropdown menu -->
+                <li><hr class="dropdown-divider"><a href="www.amamzon.com" class="dropdown-item">amazon</a></li>
+               
+            </ul>
+
+        </div>
+    </div>
+    <!-- nested dropdown buttons -->
+    <br>
+    <!-- To make the dropdown vertical you can use vertical in that lace -->
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-success">Apple</button>
+        <button type="button" class="btn btn-success">google</button>
+        <div class="btn-group dropend">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Samsung</button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">tablets</a></li>
+                <li><a href="#" class="dropdown-item">mobile phones</a></li>
+                <li><a href="#" class="dropdown-item">smart watches</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>

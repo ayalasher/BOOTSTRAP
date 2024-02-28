@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<!-- The data-bs-theme="dark" is for mlaking the document to have a dark theme  -->
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>off canvas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    <!-- This is basically a modal -->
+    <!-- Its pro is that it can be used as side navigation bar  -->
+    <!-- we are going to start with the offcanvas details then the other details-->
+    <!-- .offcanvas-start is for making the modal to start from the left -->
+    <!-- There is also one for the top , bottom and end  -->
+    <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Header</h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" ></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <p>some canvas text</p>
+            <p>some canvas text</p>
+            <button class="btn btn-primary" type="button" >button</button>
+        </div>
+
+    </div >
+
+    <div class="container-fluid mt-3 ">
+        <h3>offcanavs sidebar</h3>
+        <p>offcanavas is similar to the modal only that it is used as a side navigation menu </p>
+        <button type="button" data-bs-toggle="offcanvas" class="btn btn-primary" data-bs-target="#demo">
+            The offcanvas
+        </button>
+    </div>
+</body>
+</html>

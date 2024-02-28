@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrapt tables</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!--WE are going to create different types of tables here -->
+    <div class="cointainer mt-3">
+        <h2>BASIC TABLE</h2>
+        <p>we are going to create a very basic table</p>
+        <table class="table table-hover table-bordered ">
+            <!--Note that striped is single "p" -->
+            <!--table-bordered is also available for adding borders to the table-->
+            <!--hover is also available in table-hover-->
+            <!--dark is also available for table-dark -->
+            <!--To obatain a dark and stripped table use the table-dark and the table-stripped properties-->
+            <!--for a dark hoverable table use the table-hover and table-dark-->
+            <!--for a borderless table use table-borderlesss-->
+
+            <!--If you want to make a small table you can use the table-sm class in the table element-->
+
+            <!--table-responsive adds a scrollbar below the table incase it is small -->
+            <!--You can combine the responsiveness with the sizes like sm to come up with other combinations-->
+            <tr >
+                <th class="bg-warning text-success">Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+
+            <tr>
+                <td>killmonger</td>
+                <td>23</td>
+                <td>engineer</td>
+            </tr>
+
+            <tr>
+                <td>castro</td>
+                <td>25</td>
+                <td>loya</td>
+            </tr>
+
+            <tr>
+                <td>tutu</td>
+                <td>78</td>
+                <td>minister</td>
+            </tr>
+
+        </table>  
+
+    </div>
+    
+</body>
+</html>

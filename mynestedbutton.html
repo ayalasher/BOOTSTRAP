@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested buttons</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- we are going to make some nested buttons -->
+
+    <div class="container mt-3">
+        
+        <h4>sony products</h4>
+    
+        <div class="btn-group">
+            <button type="button" class="btn btn-success" >phones</button>
+            <button type="button" class="btn btn-success">cameras</button>
+            <!-- its div then the button -->
+            <div class="btn-group">
+                <button type="button" class="dropdown-toggle btn btn-success" data-bs-toggle="dropdown">consoles</button>
+                <!-- .dropdown-menu is for the ul  element and .dropdown item is for the link  -->
+
+                <!-- The code below can either be a div or a ul element -->
+                <div class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Playstation 5</a></li>
+                    <li><a href="#" class="dropdown-item">Playstation 4</a></li>
+                    <li><a href="#" class="dropdown-item">Playstation 3</a></li>
+
+                </div>  
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

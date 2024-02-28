@@ -1,0 +1,108 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <style>
+        #nav
+        {
+            color: beige;
+        }
+     /* data-bs-toggle-tab ....is for dynamic tabs and pills */
+
+
+
+     /* data-bs-toggle-collpase ....is for collapsibles  */
+
+     /* data-bs-toggle-dropdown ....is for dropdown lists */ 
+     /* it is used together with.dropdown-toggle */
+
+     /* data-be-target-#div name .... is for craeting something that will connect the data to the div element */
+    </style>
+</head>
+<body>
+
+
+    <i class="fa-solid fa-user"></i>
+    <!-- navigation bars in webpages -->
+    <!-- we can have the simple one -->
+
+<div class="container mt-3">
+    <!-- navbar-expand is used to make the navbar horizontal  -->
+    <!-- Otherwise it will be a vertical navbar -->
+    <nav class=" navbar navbar-expand bg-dark">  <!--navbar-expand makes the navigation bar to be horizontal either way without it it would be vertical-->
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <!-- Use the .navbar-text class to vertical align any elements 
+                    inside the navbar that are not links (ensures proper padding and text color). 
+                IT must be used with span-->
+                <li class="nav-item">
+                    <a id="nav" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item"><a id="nav" class="nav-link" href="#">contacts</a></li>
+                <li class="nav-item" ><a id="nav" class="nav-link" href="#">about</a></li>
+            </ul>
+        </div>
+
+    </nav><br>
+    <!-- collpasible navbar --> 
+    <nav class="navbar  navbar-expand-sm bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Logo</a>
+            <button type="button" title="options" class="navbar-toggler" 
+            data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a id="nav" class="nav-link" href="#">LINK 1</a></li>
+            <li class="nav-item"><a id="nav" class="nav-link" href="#">LINK 2</a></li>
+            <li class="nav-item" ><a id="nav" class="nav-link" href="#">LINK 3</a></li>
+
+        </ul>
+
+        </div>
+        </div>
+    </nav>
+    <br>    
+
+    <!-- navbar with a dropdown  -->
+    <nav class=" navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">link</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Link 1</a></li>
+                        <li><a href="#" class="dropdown-item">Link 2</a></li>
+                        <li><a href="#" class="dropdown-item">Link 3</a></li>
+
+                    </ul>
+                </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+</div>
+
+<i class="fa-solid fa-phone"></i>
+</body>
+</html> 

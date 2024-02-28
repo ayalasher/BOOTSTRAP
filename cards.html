@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        h1
+        {
+            background-color: rgb(165, 165, 53);
+        }
+
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <h1 >CARDS</h1>
+        <p>
+            cards are crucial for storing information in
+        </p>
+    </div>
+    <p>A card in Bootstrap 5 is a bordered box with some <br>
+         padding around its content. It includes options for <br>
+         headers, footers, content, colors, etc.</p>
+
+         <!--The basic card syntax-->
+         <!--It can also have the syntax for the header and the footer -->
+
+         <div class="card bg-info">
+            <!--background colors can ba added using the knpown syntax-->
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">Basic card</div>
+            <div class="card-footer">Footer</div>
+
+         </div>
+
+         <!--cards titles text and links-->
+         <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Card Title</div>
+                    <p class="card-text">Some information containing the contents of the card</p>
+                    <a href="#" class="card-link btn btn-primary">HOME</a>
+                    <a href="#" class="card-link btn btn-primary">EDUCATION</a>
+
+                </div>
+
+            </div>
+         </div>
+
+         <!--WE can even have images in cards-->
+         <!--This is for an image at the top-->
+    <div class="container">
+        <h3>card image</h3>
+        <p>Image at the top</p>
+         <div class="card" style="width: 25%;">
+            <img src="ATLA.jpg" alt="avatar aang" class="card-img-top" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">The last airbender!!</h4>
+                <p class="card-text">The show released at nick some years back.A live action version is coming to netflix</p>
+                <a href="#" class="btn btn-primary">SEE PROFILE</a>
+            </div>
+         </div>
+    </div>
+
+    <!--This is for an image at the bottom-->
+    <div class="container">
+        <h3>card image</h3>
+        <p>image at the bottom</p>
+        <div class="card" style="width: 25%;">
+            <div class="card-body"> 
+                <h4 class="card-title">AVATAR KORRA</h4>
+                <p class="card-text">The legend of korra was released in 2012 in nick and it later came neflix</p>
+                <a href="#" class="btn btn-primary">SEE PROFILE</a>
+            </div>
+            <img src="KORRA.jpg" alt="avatar korra" style="width: 100%;">
+        </div>
+
+    </div>
+
+    <!--You can evene make the card to be an image overlay..This means that the image will be the background of the whole card-->
+
+
+    <div class="container">
+        <h3>overlay card image</h3>
+        <div class="card img-fluid" style="width: 27%;">
+        <img src="GENJI2.jpg" alt="avatar genji" class="card-img-top" style="width: 100%;">
+        <div class="card-img-overlay">
+            <h4 class="card-title">Avatar genji</h4>
+            <p class="card-text">Avatar genji is the next avatar after korra . The films is set 100 yearq after Korra's time and he
+                is an earth bender specifically from a tribe of sand benders
+            </p>
+            <a href="#" class="btn btn-primary">SEE MORE</a>
+
+        </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
