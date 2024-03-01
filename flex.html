@@ -18,6 +18,20 @@
 
         <!-- You can add the .flex-column to make the items to be vertically arranged -->
 
+        <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+        <div class="p-2 bg-primary">flex box 1</div>
+        <div class="p-2 bg-secondary">flex box 2</div>
+        <div class="p-2 bg-warning">flex box 3</div>
+    </div>
+
+
+    <br>
+
+    <div class="d-flex p-3 bg-info text-white " >
+        <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
+
+        <!-- You can add the .flex-column to make the items to be vertically arranged -->
+
 
         <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
         <div class="p-2 bg-primary">flex box 1</div>
@@ -30,6 +44,7 @@
     <div class="d-inline-flex p-3 bg-info text-white " >
         <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
         <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+        <!-- This allows the inner boxe to be fully covered by the outer box -->
         <div class="p-2 bg-primary">flex box 1</div>
         <div class="p-2 bg-secondary">flex box 2</div>
         <div class="p-2 bg-warning">flex box 3</div>
@@ -59,6 +74,7 @@
     <br>
 
     <!-- be careful on the spelling of justify -->
+    <!-- it is put in the main div of the flex box  -->
     <div class="d-flex justify-content-between p-3 bg-info text-white " >
         <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
         <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
@@ -76,6 +92,94 @@
         <div class="p-2 bg-secondary flex-fill ">flex box 2</div>
         <div class="p-2 bg-warning flex-fill "  >flex box 3</div>
     </div>
+
+    <br>
+
+    
+    <div class="d-flex  p-3 bg-info text-white " >
+        <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
+        <!-- You can add the .flex-column to make the items to be vertically arranged -->
+        <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+        <div class="p-2 bg-primary">flex box 1</div>
+        <div class="p-2 bg-secondary">flex box 2</div>
+        <div class="p-2 bg-warning">flex box 3</div>
+    </div>
+
+    <br>
+
+        
+    <div class="d-flex  p-3 bg-info text-white " >
+        <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
+        <!-- You can add the .flex-column to make the items to be vertically arranged -->
+        <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+        <div class="p-2 bg-primary">flex box 1</div>
+        <div class="p-2 bg-secondary">flex box 2</div>
+        <div class="p-2 bg-warning flex-grow-1">flex box 3</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex  p-3  " >
+        <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
+        <!-- You can add the .flex-column to make the items to be vertically arranged -->
+        <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+        <div class="p-2 bg-primary order-3 ">flex box 1</div>
+        <div class="p-2 bg-secondary order-2 ">flex box 2</div>
+        <div class="p-2 bg-warning order-1">flex box 3</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex bg-info" >
+        <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
+        <!-- You can add the .flex-column to make the items to be vertically arranged -->
+        <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+
+        <!-- ms-auto pushes the elements to the right -->
+        <div class="p-2  ms-auto  bg-primary ">flex box 1</div>
+        <div class="p-2 bg-secondary ">flex box 2</div>
+        <div class="p-2 bg-warning ">flex box 3</div>
+    </div>
+
+    <br>
+
+    <div class="d-flex bg-info ms-auto " >
+        <!-- the .d-flex make sthe contents to be horizontally aligned because naturally thry are vertical  -->
+        <!-- You can add the .flex-column to make the items to be vertically arranged -->
+        <!-- you can also use .d-inline--flex to make the outer container to be smaller-->
+        <div class="p-2 bg-primary ">flex box 1</div>
+        <div class="p-2 bg-secondary ">flex box 2</div>
+        <!-- ms-me pushes the elements to the left  -->
+        <div class="p-2  ms-me bg-warning ">flex box 3</div>
+    </div>
+
+    <!-- .flex-wrap is arranges all the elements of the flex box as they are -->
+    <!-- .flex-wrap-reverse s used to reversz the elements of the flex box as they are .  -->
+    <!-- .flex-no-wrap is used when you dont want any wrap in the elements of the flex box -->
+
+    <!-- aligning content -->
+
+    <!-- aligning the content of gathered elements -->
+    <!-- .align-content-start -->
+    <!-- .align-content-end -->
+    <!-- .align-content-center -->
+    <!-- align-content-around -->
+    <!-- .align-content-stretch -->
+
+    <!-- aligning the content of single row -->
+    <!-- here we use the align-items -->
+    <!-- .align-items-start -->
+    <!-- .align-items-end -->
+    <!-- align-items-center -->
+    <!-- align-items-baseline -->
+    <!-- align-items-sterch -->
+
+    <!-- aligning of a specified fle item -->
+    <!-- .align-self-start -->
+    <!-- .align-self-end -->
+    <!-- .align-self-center -->
+    <!-- .align-self-baseline -->
+    <!-- .align-self-stretch -->
 
 </body>
 </html>

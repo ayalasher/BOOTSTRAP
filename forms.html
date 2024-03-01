@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms with bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <!-- we are going to look into different ways in which bootstrap can make forms to be better -->
+   <div class="container mt-3">
+    <h3>My form</h3>
+    <p>
+        This is going to be my simple form from my previous knpwledge
+    </p>
+
+    <form action="/action_page.php" class="bg-secondary" onsubmit="return formvalidation()">
+        <fieldset>
+            <!-- Row and col can be used to arrange the elements vertically or even horizontally -->
+
+
+            <div class="row">
+        <div class="mb-3 mt-3 col">
+            <label for="email">Email</label>
+            <input class="form-control" id="emaill" type="email" name="email"  placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3 col ">
+            <label for="password"><P></P>password</label>
+            <!-- The size  of the form control can be changed to fit  -->
+            <!-- form-control-lg or even form-control-sm can be used .. this changes the sizes of the inputs -->
+            <!-- form-control-plaintext styles an input field without orders but keeps the margins and paddings -->
+            <input type="password" class="form-control" id="passwad" name="pswd" placeholder="Enter your email">
+            <!-- .form-control is used to style up the form  -->
+        </div>
+
+            <div class="form-check mb-3 " > 
+                <label for="checkbox "><input class="form-check-input" type="checkbox">remember me </label>
+                
+            </div>
+
+        </div>
+
+            <div class="mb-3">
+                <label for="textarea">comments</label>
+                <textarea name="txtarea" id="comment" cols="3" rows="5" class="form-control" ></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="color" class="form-label"></label>
+                <input type="color" name="color" id="color" class="form-control form-control-color" value="#CCCCCC" title="choose a color " >
+            </div>
+
+            <button type="submit" class="btn btn-primary"  >submit</button>
+        </fieldset>
+    </form>
+   </div>
+   <!-- Note that returning of an error message when the fields ar empty is prompted by some javascript code  -->
+
+   <!-- text area is the area  where you can writeany much amout of text  -->
+
+   <!-- INLINE FORMS -->
+   
+
+   <!-- remember that inouts can be put to read-only or can even be disabled  -->
+
+   <!-- This can simplybe done by putting the disabled and the readonly attributes -->
+   
+
+
+   <script>
+    // We  are going to write some javascript code here 
+    // This is going to be for some functions  
+
+    // function declaration
+    function formvalidation() {
+        var email = document.getElementById("email").value ;
+        var password = document.getElementById("passwad").value ; 
+
+        // The if statement
+        if (email == ""|| password == "" )
+        {
+            alert("Please fill in the fields") ;
+            return false ; //This prevents the submission of the form 
+        }
+        return true ; // allows form submission 
+    }
+
+   </script>
+</body>
+</html>
