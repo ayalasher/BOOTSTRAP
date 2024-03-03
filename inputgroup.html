@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input group</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <!--  we are going to look at input groups -->
+    <!-- This can allow the inputting of icons or text in aspecal way during data input -->
+
+    <div class="container mt-3" >
+
+        <form action="/action_page.php">
+
+            <!-- sizes can be modified with .input-group-sm and .input-group-lg -->
+
+            <label for="label" class="form-label" class="form-control" >email</label>
+            <div class="input-group" >
+                <span class="input-group-text" >@</span>
+                <input type="email" placeholder="enter your email" class="form-control" id="label" >
+               
+            </div>
+
+            <!-- multiple inputs -->
+
+            <label for="multipleinputs" class="form-control" >Insert two email addrresses</label>
+            <div class="input-group" >
+                <span class="input-group-text" >@</span>
+                <input type="email" name="multipleinputs" id="multipleinputs" class="form-control" placeholder="enter first email"  >
+                <input type="email" name="multipleinputs" id="multipleinputs" class="form-control" placeholder="enter second email"  >
+            </div>
+
+            <!-- miltiple addons -->
+
+            <label for="multipleinputs2" class="form-label" ></label>
+            <div class="input-group" >
+                <span class="input-group-text" > @ </span>
+                <span class="input-group-text" >number</span>
+                <input type="email"  class="form-control" name="multipleaddons" id="multipleinputs2" placeholder="enter you email or phone number" >
+            </div>
+
+            <!-- Input group with check boxes -->
+
+            <label for="sometext">Enter some infomartion and check the box if necessary</label>
+            <div class="input-group" >
+                <span class="input-group-text" >
+                    <input type="checkbox"  >
+                    <!-- The .form-control cannot be put together with the .checkbox -->
+                </span>
+                <input type="text"  class="form-control" name="text" id="someinfo" placeholder="enter some info and check the box"   >
+            </div>
+
+            <h4>input group buttons</h4>
+
+
+            <label for="text1">Type here</label>  
+            <div class="input-group" >
+                <button type="button" class="btn btn-outline-primary" title="sumbmit" >click here</button>
+                <input type="text" name="sometext" id="text1" class="form-control" placeholder="type here" >
+
+            </div>
+
+            <h4>button groups with dropdown</h4>
+
+            <div class="input-group" >
+                <button type="button" class="btn btn-primary" data-bs-toggle="dropdown" >career</button>
+                <ul class="dropdown-menu" >
+                    <li><a class="dropdown-item" href="#">engineer</a></li>
+                    <li><a class="dropdown-item" href="#">lawyer</a></li>
+                    <li><a class="dropdown-item" href="#">business person</a></li>
+                </ul>
+
+                <input type="text" name="input" class="form-control" id="input" placeholder="enter specifications of your carreer" >
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

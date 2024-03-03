@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkboxes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <!-- we are going to look at checkboxes  -->
+
+    <div class="container mt-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="gender" value="something" checked >
+            <label for="option1" id="option1" >male</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" name="female" id="female" value="something" class="form-check-input" >
+                <label for="female" id="option2">female</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" name="disabled" class="form-check-input" id="disabled" value="something" disabled  >
+                <label for="disabled" id="disabled" >disabled</label>
+            </div>
+
+            <div class="form-check" >
+                <h5>choose one from the follwing</h5>
+                <form action="/action_page.php">
+                    <div class="form-check">
+                        <input type="radio" name="option1" id="option1" class="form-check-input" value="option1" >
+                        <label class="form-check-label" for="option1">option1</label>
+                    </div>
+
+                    <!-- note that the name should always remain to otpion 1 -->
+                    <!-- The id and the value can change -->
+
+                    <div class="form-check">
+                        <input type="radio" name="option1" id="option2" class="form-check-input" value="option2" >
+                        <label class="form-check-label" for="option2">option2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" name="option1" id="option3" class="form-check-input" value="option3" >
+                        <label class="form-check-label" for="option3">option3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" name="option1" id="option4" class="form-check-input" value="option4" >
+                        <label class="form-check-label" for="option4">option4</label>
+                    </div>
+
+                    <div class="form-check form-switch" > 
+                        <!-- form switch is for making the checkbox to be inform of a switch -->
+                        <input type="checkbox" name="darkmode" id="myswitch" value="yes" class="form-check-input"  >
+                        <label for="myswitch" class="form-check-label" >darkmode</label>
+                    </div>
+                </form>
+
+            </div>
+         
+    </div>
+
+
+    
+</body>
+</html>

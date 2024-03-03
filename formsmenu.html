@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@
         <!-- we are going to make some menus for forms  -->
         <h3>select menu</h3>
         <p>We are going to look into some of the things of selevt menu</p>
-
+        
         <form action="action_page.php">
-            <label for="sell" class="form-label">slelect onr from the list</label>
+            <label for="sell" class="form-label">select one item from the list</label>
             <select name="sell" id="sell" class="form-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -22,10 +22,30 @@
                 <option value="4">4</option>
             </select>
 
-            <label for="sell2" ></label>
-
+            <label for="sell2" class="form-label">select 2 </label>
+            <select multiple name="select 2" id="sell2" class="form-select" >
+                <!-- The size of the .form-select can be made smaller or bigger using the sm and lg  -->
+                <!-- adding disbled to the  select element is going to disable the disable attribute-->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
 
         </form>
+
+        <div>
+            <h4>data lists</h4>
+            <p>Choose your browser</p>
+            <label for="label" class="form-label" ></label>
+            <input  class="form-control" name="browser" id="browser" list="browsers" >
+           <datalist id="browsers" >
+            <option value="edge"></option>
+            <option value="chrome"></option>
+            <option value="safari"></option>
+            <option value="brave"></option>  
+           </datalist>
+        </div>
     </div>
 </body>
 </html>

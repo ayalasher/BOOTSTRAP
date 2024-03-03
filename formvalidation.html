@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <!-- lets do this .. almost at the end    -->
+</head>
+<body>
+    <div class="container mt-3" >
+        <!-- was validated -->
+        <form action="/action_page.php" class="was-validated" >
+            <!-- form validation -->
+            <!-- there are two validation classes -->
+            <!-- They depend on whether you want validation feedback before or after  submitting the form -->
+            <!-- The two basic are .was-validated and .needs-validation  -->
+            <!-- green color will be for valid and the green color is going to be for the invalid -->
+            <!-- .valid-feedback and .invalid-feedback can be added so as to tell trhe user what is going to be missing  -->
+
+            <!-- start -->
+            <h4>form validation</h4>
+
+            <div class="mb-3 mt-3" >
+                <label for="username" class="form-label" >username</label>  
+                <input type="text" class="form-control" name="username" id="username" placeholder="enter your username" required  >
+                <div class="valid-feedback" >Valid</div>
+                <div class="invalid-feedback" >please fill out this field</div>
+
+            </div>
+
+        <div class="mb-3" >
+                <label for="email" class="form-label" >email</label>  
+                <input type="email" class="form-control" name="email" id="email" placeholder="enter your email" required  >
+                <div class="valid-feedback" >Valid</div>
+                <div class="invalid-feedback" >please fill out this field</div>
+        </div>
+
+        <div class="mb-3 form-check" >
+            <input type="checkbox" class="form-check-input" id="check" required  >
+            <label for="check" class="form-check-label">yes or no ? </label>
+            <div class="valid-feedback" >valid</div>
+            <div class="invalid-feedback" >please fill out this form</div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floating lables</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <!-- we are going to look at floating lables -->
+
+    <div class="container mt-3 mb-3 " >
+        <h3>floating/animated labels</h3>
+    <p>
+        normally labels are usually outside the input but they can be put inside and 
+        there is going to be an animation . The input will work normally
+    </p>
+    <form action="/action_page.php">
+        <div class="form-floating mb-3 mt-3  " >
+            <!-- Note that incase this is used there will be need for a placeholder -->
+            <!-- without the placeholder the code does not work -->
+            <input type="email" name="text" id="text" class="form-control"  placeholder="enter your email"  >
+            <label for="text">email</label>
+        </div>
+
+        <!-- this can also work fot text areas  -->
+        <!-- Note that the for in the label goes with the id of the input element -->
+        <div class="form-floating mb-3 mt-3  " >
+            <textarea name="comment" id="comment" class="form-control" placeholder="enter a comment"></textarea>
+            <!-- The small marks on the bottom right part of the screen is normal and is usually there -->
+            <label for="comment">comment</label>
+        </div>
+        <!-- we are going to make one with dtopdown menu -->
+        <div class="form-floating" >
+            <select name="select" id="select" class="form-select" >
+                <option value="engineer">engineer</option>
+                <option value="loya">loya</option>
+                <option value="doktari">doktari</option>
+            </select>
+            <label for="select" class="form-label" >select</label>
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>
